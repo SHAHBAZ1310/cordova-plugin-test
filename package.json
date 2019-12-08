@@ -1,0 +1,15 @@
+{
+  "name": "upisdk",
+  "version": "1.0.0",
+  "description": "Upi Sdk Android",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "upisdk",
+    "payu"
+  ],
+  "author": "Shahbaz Ahmmod",
+  "license": "ISC"
+}

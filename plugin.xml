@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="com-droidada-plugins-upisdk" version="0.0.1">
+
+   <name>UpiSdk</name>
+
+   <js-module name="UpiSdk" src="www/UpiSdk.js">
+      <clobbers target="UpiSdk" />
+   </js-module>
+
+   <platform name="android">
+      <config-file parent="/*" target="res/xml/config.xml">
+         <feature name="UpiSdk">
+            <param name="android-package" value="com.droidada.plugins.upisdk.UpiSdk" />
+         </feature>
+      </config-file>
+
+      <config-file parent="/*" target="AndroidManifest.xml" />
+      <source-file src="src/android/UpiSdk.java" target-dir="src/com/droidada/plugins/upisdk/UpiSdk" />
+   </platform>
+
+</plugin>
